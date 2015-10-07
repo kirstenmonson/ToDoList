@@ -1,0 +1,25 @@
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+#todo-list {
+	list-style: none;
+}
+
+#todo-list li {
+	position: relative;
+	font-size: 25px;
+	border-bottom: 1px solid;
+}
+
+
+#todo-list li .swingleft {
+  left: -20px;
+}
+
+#todo-list li.completed label {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#todo-list li .deletebutton {
+}
+

@@ -1,0 +1,21 @@
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{input
+  type="text"
+  id="newList"
+  placeholder="Add something here!"
+  value=newTitle
+  action="addList"}}
+
+
+<ul id="todo-list">
+  {{#each lists as |list|}}
+    <li {{bind-attr class="list.isCompleted:completed"}}>
+      {{input type="checkbox" checked=list.isCompleted class="swingleft"}}
+
+      <label>{{list.title}}</label>
+<label>
+<button type="button" class="btn btn-danger btn-sm" {{action "deleteList" list}} >X</button></label>
+    </li>
+  {{/each}}
+</ul>
+
+
